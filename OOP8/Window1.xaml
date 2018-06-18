@@ -1,0 +1,18 @@
+﻿<Window x:Class="OOP8.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OOP8"
+        mc:Ignorable="d"
+        Title="Window1" Height="221.299" Width="326">
+    <Grid>
+        <DataGrid x:Name="temp" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Модель" Binding="{Binding Name}" Width="110"/>
+                <DataGridTextColumn Header="Цена" Binding="{Binding Price}" Width="80"/>
+                <DataGridTextColumn Header="Дата выхода" Binding="{Binding Date, StringFormat=d}" Width="112"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
